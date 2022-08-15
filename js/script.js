@@ -30,11 +30,13 @@ console.log(sumTwoSmallestNumbers(2));
 
 /////////
 
-////////        Task #2
+////////        Task #2 
 
+// let defaultValue = 0;         //в таких случаях лучше передавать переменную или просто аргумент, 
+                                //почтому-что на лекции каунтер был через переменную и с начальным значение = 0;
 
-function makeCalc () {
-    let defaultValue = 0;
+function makeCalc (defaultValue) {
+    
     return {
         sum: function(sum) {
             return defaultValue = defaultValue + sum;
