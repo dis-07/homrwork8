@@ -33,26 +33,27 @@ console.log(sumTwoSmallestNumbers(2));
 ////////        Task #2
 
 
-// function makeCalc (calc) {
-//     return {
-//         sum: function(sum) {
-//             return calc = calc + sum;
-//         },
-//         mult: function(mult) {
-//             return calc = calc * mult;
-//         },
-//         sub: function(sub) {
-//             return calc = calc - sub;
-//         },
-//         div: function(div) {
-//             return calc = calc / div;
-//         },
-//     }
-// }
+function makeCalc () {
+    let defaultValue = 0;
+    return {
+        sum: function(sum) {
+            return defaultValue = defaultValue + sum;
+        },
+        mult: function(mult) {
+            return defaultValue = defaultValue * mult;
+        },
+        sub: function(sub) {
+            return defaultValue = defaultValue - sub;
+        },
+        div: function(div) {
+            return defaultValue = defaultValue / div;
+        },
+    }
+}
 
-// const calculete = makeCalc(10);
+const calculete = makeCalc(10);
 
-// console.log(calculete.sum(5));
-// console.log(calculete.mult(10));
-// console.log(calculete.sub(40)); 
-// console.log(calculete.div(10)); 
+console.log(calculete.sum(5));
+console.log(calculete.mult(10));
+console.log(calculete.sub(40)); 
+console.log(calculete.div(10)); 
