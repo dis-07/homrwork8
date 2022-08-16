@@ -36,19 +36,19 @@ console.log(sumTwoSmallestNumbers(2));
                                 //почтому-что на лекции каунтер был через переменную и с начальным значение = 0;
 
 function makeCalc (defaultValue) {
-    
+    let calc = defaultValue;
     return {
         sum: function(sum) {
-            return defaultValue = defaultValue + sum;
+            return calc = calc + sum;
         },
         mult: function(mult) {
-            return defaultValue = defaultValue * mult;
+            return calc = calc * mult;
         },
         sub: function(sub) {
-            return defaultValue = defaultValue - sub;
+            return calc = calc - sub;
         },
         div: function(div) {
-            return defaultValue = defaultValue / div;
+            return calc = calc / div;
         },
     }
 }
